@@ -1,0 +1,7 @@
+ <ul>
+    {% for prod in products  %}
+        <li>{{ prod.prodName }} 
+                <a href='/test/cat?name={{ prod.cat.catName }}'>(Категория - {{ prod.cat.catName }})</a>
+        </li>
+    {% endfor %}
+</ul>
